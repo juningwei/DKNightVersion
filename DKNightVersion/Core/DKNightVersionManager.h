@@ -34,6 +34,15 @@ extern DKThemeVersion * const DKThemeVersionNight;
  *  This notification will post, every time you change current theme version
  *  of DKNightVersionManager glbal instance.
  */
+
+
+extern DKThemeVersion * const DKThemeVersionRed;
+
+
+extern DKThemeVersion * const DKThemeVersionYellow;
+
+
+
 extern NSString * const DKNightVersionThemeChangingNotificaiton;
 
 /**
