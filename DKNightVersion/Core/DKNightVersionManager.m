@@ -10,6 +10,9 @@
 
 NSString * const DKThemeVersionNormal = @"NORMAL";
 NSString * const DKThemeVersionNight = @"NIGHT";
+NSString * const DKThemeVersionRed = @"RED";
+NSString * const DKThemeVersionYellow = @"YELLOW";
+
 
 NSString * const DKNightVersionThemeChangingNotificaiton = @"DKNightVersionThemeChangingNotificaiton";
 
@@ -43,11 +46,11 @@ NSString * const DKNightVersionCurrentThemeVersionKey = @"com.dknightversion.man
 }
 
 - (void)nightFalling {
-    self.themeVersion = DKThemeVersionNight;
+//    self.themeVersion = DKThemeVersionNight;
 }
 
 - (void)dawnComing {
-    self.themeVersion = DKThemeVersionNormal;
+//    self.themeVersion = DKThemeVersionNormal;
 }
 
 - (void)setThemeVersion:(DKThemeVersion *)themeVersion {
@@ -65,11 +68,11 @@ NSString * const DKNightVersionCurrentThemeVersionKey = @"com.dknightversion.man
     if (self.shouldChangeStatusBar) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        if ([themeVersion isEqualToString:DKThemeVersionNight]) {
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-        } else {
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-        }
+//        if ([themeVersion isEqualToString:DKThemeVersionNight]) {
+//            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+//        } else {
+//            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+//        }
 #pragma clang diagnostic pop
     }
 }
