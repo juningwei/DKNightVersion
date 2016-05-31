@@ -30,7 +30,7 @@ UIColor *DKColorFromRGBA(NSUInteger hex) {
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         sharedInstance = [[DKColorTable alloc] init];
-        sharedInstance.file = @"DKColorTable.txt";
+        sharedInstance.file = @"PPRColorTable.txt";
     });
     return sharedInstance;
 }
